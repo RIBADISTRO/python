@@ -1,0 +1,56 @@
+Crear ambiente virtual kivy
+#=============================================================================================================
+1. Instalar los paquetes
+
+sudo apt-get install -y python-pip python3-pip build-essential git python python3-dev libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev ffmpeg
+
+
+
+#==================================================================================================================
+2.Agregar repositorio
+
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:mc3man/trusty-media
+sudo apt-get update
+sudo apt-get install ffmpeg
+
+#===============================================================================================================
+ 
+3. Instalar los paquetes 
+
+sudo pip install --upgrade pip virtualenv setuptools
+sudo pip install virtualenvwrapper
+
+
+#===============================================================================================================
+4. Configurar archivo
+nano .bashrc
+
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+#===============================================================================================================
+
+5. Crear el ambiente virtual
+
+mkvirtualenv -p  /usr/bin/python3.6 k36
+(k36) j@rb:~$ pip install Cython==0.29.10
+(k36) j@rb:~$ pip install kivy
+
+#===============================================================================================================
+6.Pueba del ambiente viertual
+
+(k36) j@rb:~$ python
+Python 3.6.9 (default, Nov  7 2019, 10:44:02) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from kivy.app import App
+>>> App().run()
+
+#===============================================================================================================
+
+7.Salir del entorno virtual
+
+(k36) j@rb:~$ deactivate
+
+
