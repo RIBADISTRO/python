@@ -1,2 +1,0 @@
-# paython
-Developing in Python.*
