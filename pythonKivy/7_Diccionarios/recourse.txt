@@ -1,0 +1,160 @@
+
+    INTRODUCCION A LOS DICCIONARIOS
+
+    Es un tipo de lista no ordenadas en la cual cada
+    elemento esta asociado a una lleva
+
+      =========================
+        LLAVE          VALOR
+        "a"         "Pericles"
+        33.2        "Menelau"
+        (10,20)     "Atreu"
+        ("str")     "Paris"
+        5           "Tientes"
+       ========================
+
+
+       #Ejemplo
+
+>>> {}
+{}
+>>> type({})
+<class 'dict'>
+>>> d1 ={}
+>>> type(d1)
+<class 'dict'>
+>>> d1={}
+>>> d1['aaa'] = 1000
+>>> d1
+{'aaa': 1000}
+>>>
+
+>>> d1['bbb'] = 3000
+>>> d1['ccc'] = 4000
+>>> d1['ddd'] = 5000
+>>> d1
+>>> d1
+{'aaa': 1000, 'bbb': 2000, 'ccc': 3000, 'ddd': 4000}
+
+
+Para conocer que valor esta relacionado nuetra clave
+
+>>> d1['aaa']
+1000
+
+    Para relacionar los valores con una clave
+
+d2= {1.1:"test1",1.2:"test2",1.3:"test3"}
+>>> d2
+{1.1: 'test1', 1.2: 'test2', 1.3: 'test3'}
+
+
+=====================================================================
+
+
+FUNCIONES DE LOS DICCIONARIOS
+
+
+
+>>> tel = {
+...     343565767: "Periferico",
+...     384785496: "Aritoteles",
+...     932749657: "JHJFhdsufr",
+...     948357849: "Tiendad"
+...     }
+>>> tel
+{343565767: 'Periferico', 384785496: 'Aritoteles', 932749657: 'JHJFhdsufr', 948357849: 'Tiendad'}
+>>> print(tel)
+{343565767: 'Periferico', 384785496: 'Aritoteles', 932749657: 'JHJFhdsufr', 948357849: 'Tiendad'}
+
+
+Para conocer la cantida de elementos que contiene nuetro diccionario
+
+>>> len(tel)
+4
+
+Para eleminar un elemento dentro de cuaquier posision de nuetra diccionario
+
+
+>>> del(tel[384785496])
+>>> print(tel)
+{343565767: 'Periferico', 932749657: 'JHJFhdsufr', 948357849: 'Tiendad'}
+
+
+Para que retornoar una lista de la claves
+
+>>> tel.keys()
+dict_keys([343565767, 932749657, 948357849])
+
+
+
+Para retornar una lista de valores
+
+>>> tel.values()
+dict_values(['Periferico', 'JHJFhdsufr', 'Tiendad'])
+
+
+
+Para conocer el valor asociado de una keys
+
+
+##Forma 1
+
+>>> tel[932749657]
+'JHJFhdsufr'
+
+##Forma 2
+
+>>> tel.get(932749657)
+'JHJFhdsufr'
+
+Para retornar un elemento y valor de nuetro diccionario danto que va
+eliminar el utlimo elemento del diccionario
+
+>>> tel.popitem()
+(948357849, 'Tiendad')
+
+
+Para conocer si se encuetra un contenido de nuestro diccionario con una condicion
+en.
+
+
+>>> 3248074 in tel
+True
+
+
+>>> tel = {
+... 8327483: "fdljshfl",
+... 3248074: "sdjfkdjs",
+... 3928472: "dlkdjfkls",
+... 9083469: "kjdslfhls"
+... }
+>>> tel
+{8327483: 'fdljshfl', 3248074: 'sdjfkdjs', 3928472: 'dlkdjfkls', 9083469: 'kjdslfhls'}
+
+
+Para unir dos diccionario en un solo contenido
+
+
+>>>tel = {
+... 8327483: "fdljshfl",
+... 3248074: "sdjfkdjs",
+... 3928472: "dlkdjfkls",
+... 9083469: "kjdslfhls"
+... }
+
+>>> tel2={999999: "testes1", 43454564: "tesd3"}
+
+>>> tel.update(tel2)
+
+>>> tel
+{8327483: 'fdljshfl', 3248074: 'sdjfkdjs', 3928472: 'dlkdjfkls', 9083469: 'kjdslfhls', 999999: 'testes1', 43454564: 'tesd3'}
+
+
+
+Para  incluir una tupla en nuestro diccionario
+
+>>> l = (10, 10, 10)
+>>> tel[l] = "RIVERA"
+>>> tel
+{8327483: 'fdljshfl', 3248074: 'sdjfkdjs', 3928472: 'dlkdjfkls', 9083469: 'kjdslfhls', 999999: 'testes1', 43454564: 'tesd3', (10, 10, 10): 'RIVERA'}
