@@ -25,9 +25,25 @@ OPERAODRES DEATRIBUCION
 El valor al lado derecho del operador es atribuido
 a la varible al lado izquierdo del operdaor
 
-        x = y
+        x = 3
+        y = 9
+
+================================
+|   +=  | (x += y) | = | 12   |
+|   -=  | (x -= y) | = | 6    |
+|   *=  | (x *= y) | = | 27   |
+|   /=  | (x /= y) | = | 3    |
+|   %=  | (x %= y) | = | 0    |
+================================
+
+ATRIBUCION  MULTIPLES
+Es la capacida de atribuir un conjunto  de  valores a un conjunto de variable
 
 
-        i
+ATRIBUCION CONDICIONAL
+
+Es na estructura utlizada para simplificar el codigo cuyo valor a ser atribuido  sera
+aquel que satisfag a la condicion
 
 """
+
