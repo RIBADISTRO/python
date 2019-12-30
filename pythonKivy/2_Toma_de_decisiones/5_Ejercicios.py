@@ -42,6 +42,34 @@ y muestre si el mismo es positivo, negativo o cero.
 
 4) Realice un algoritmo que pida la edad de una persona e imprima en la pantalla si 
 la misma es mayor de edad o menor de edad.
-
 """
+
+
+#print()
+#edad = int(input("Digite un tu edad: "))
+#if(edad<=0):
+#    print("Su edad no puede ser menor a CERO")
+#elif(edad>100):
+#    print("Tu edad no puede exceder mayor a 100")
+#elif(edad>18):
+#    print("Usted es mayor de edad")
+
+#else:
+#    print("Ustede es menor de edad")
+
+'''
+5) Realice un algoritmo que pida la edad del usuario y 
+la edad de su madre. Seguidamente, imprima en la pantalla la edad a la que su mamá lo tuvo.
+
+'''
+
+'''
+6) Realice un algoritmo que imprima 50 veces el carácter "-" en la pantalla (sin la utilización de bucles de repetición).
+'''
+caracter=0
+n=0
+while(caracter<50):
+
+    caracter+=1
+    print(n+"-")
 
