@@ -1,0 +1,8 @@
+ESTAPAS DE LA OIMPORTACION
+
+Modulo implementacion en python son analizados e interpretado en el momento de la importacion
+
+
+-> Localizacion
+-> Compilacion (.pyc)
+.> Ejecucion

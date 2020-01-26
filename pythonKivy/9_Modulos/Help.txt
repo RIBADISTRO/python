@@ -63,4 +63,24 @@ sombolo = modulo.simbolo
 
 
 
+========================================================
 
+
+LOCALIZACION DE MODULOS
+
+-> Directorio Base
+-> Dorectorio de la variable PYTHONPATH
+-> Directorio de la biblioteca Estandar
+-> Directorio definidos por los archivos *.pth
+
+
+########################################################
+
+
+-> modulo.pyd (*.dll en windows o *.so en UNix)
+-> moudlo.py
+-> moudlo.pyc o modulo.pyo
+-> modulo.pyc p modulo.pyo
+-> modulo (carpeta)
+-> moudlo.so (en linux)
+-> una eimagen en la memoria
