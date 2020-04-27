@@ -61,3 +61,21 @@ j@rb:~$ workon k36
 (k36) j@rb:~$ deactivate
 
 
+#==============================================================================================================
+
+9. Ver todo los paquetes instalados en mi entorno virtual
+
+(k36) j@rb:~$ pip list --format=columns
+
+#==============================================================================================================
+10.listar todos los paquetes que estan desactualizada
+
+(dj36) j@rb:~$ pip list --outdated
+
+#==============================================================================================================
+
+11.Desistalar un paquete en nuetro entorno virtual
+
+(dj36) j@rb:~$ pip uninstall psycopg2-binary
+
+11.
