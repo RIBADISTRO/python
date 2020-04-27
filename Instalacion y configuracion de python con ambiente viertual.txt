@@ -38,7 +38,7 @@ mkvirtualenv -p  /usr/bin/python3.6 k36
 (k36) j@rb:~$ pip install kivy
 
 #===============================================================================================================
-6.Pueba del ambiente viertual
+6.Pueba del ambiente virrtual
 
 (k36) j@rb:~$ python
 Python 3.6.9 (default, Nov  7 2019, 10:44:02) 
@@ -48,8 +48,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> App().run()
 
 #===============================================================================================================
+7. Listar todos los entoronos Virtuales && Activar un entorno Virtual 
+j@rb:~$ lsvirtualenv 
+=== ACTIVAR ===
+j@rb:~$ workon k36
+(k36) j@rb:~$
 
-7.Salir del entorno virtual
+
+#===============================================================================================================
+8.Salir del entorno virtual
 
 (k36) j@rb:~$ deactivate
 
