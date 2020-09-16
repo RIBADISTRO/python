@@ -78,4 +78,6 @@ j@rb:~$ workon k36
 
 (dj36) j@rb:~$ pip uninstall psycopg2-binary
 
-11.
+
+
+

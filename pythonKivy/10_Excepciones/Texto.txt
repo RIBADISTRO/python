@@ -1,0 +1,22 @@
+
+EXCEPCIONES
+
+Excepciones es todo devio de la regla general
+
+
+    Tratamiento de excepciones     Levantamiento de  excepciones
+es todo codigo que indentifica     Es todo codigo que  al
+        error e implementa una     percibir un  problema crea
+    soluciones evitando que la     una excepcion avisandole  asi
+     aplicacion sea finalizada     al programador
+
+
+
+     EXCEPCIONES
+
+     try:
+        codigo
+     except ErrorClass1:
+        tratamiento
+     except ErrorClass2:
+         tratamiento
