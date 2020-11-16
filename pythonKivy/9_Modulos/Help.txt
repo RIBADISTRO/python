@@ -1,0 +1,86 @@
+Modulo
+
+Son archivo que contienen codigo Python
+con estencion *.py
+
+
+
+Un conjunto de modulo pueden
+dar origen a un paquete
+
+    CARACTERISTICAS
+
+-> Rutilizacion a un mismo codigo
+-> Forma Namespace
+-> Compartir una estructura de datos
+
+
+Simbolo o nombre es cualquier declaracion,
+ya sea una variable, una funcion, clase, etc.
+
+Biblioteca Estandar es el conjunto de modulos
+contenidos en la distribucion oficial
+
+https://docs.python.org/3/py-modindex.html
+
+
+Buildtins: Es el nombre del modulo que disponibiliza a
+los principales tipos, funciones y varibles del lenguaje
+
+
+--------------------------------------------------------
+AMBITOS Y TABLA DE SIMBOLOS
+
+
+Importar Modulos
+
+Importacion de modulo es el medio mas simple para
+reutilizar a un codigo
+
+import herramientas
+
+
+ modulo.attr
+
+abjeto | propredad
+
+
+MODULO
+
+La importante  de simbolos  copia  atributos  de un modulo
+directamente  a la tabla de simbolo local
+
+
+from modulo sa M
+from modulo import simblo as S
+
+
+#===================================================================================
+
+from modulo
+
+sombolo = modulo.simbolo
+
+
+
+========================================================
+
+
+LOCALIZACION DE MODULOS
+
+-> Directorio Base
+-> Dorectorio de la variable PYTHONPATH
+-> Directorio de la biblioteca Estandar
+-> Directorio definidos por los archivos *.pth
+
+
+########################################################
+
+
+-> modulo.pyd (*.dll en windows o *.so en UNix)
+-> moudlo.py
+-> moudlo.pyc o modulo.pyo
+-> modulo.pyc p modulo.pyo
+-> modulo (carpeta)
+-> moudlo.so (en linux)
+-> una eimagen en la memoria

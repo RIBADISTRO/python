@@ -1,0 +1,32 @@
+
+*{
+    margin: px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 20;
+  }
+#wrapper {
+    font-size: 100px
+}
+
+input:nth-child(odd){
+    border: 0px;
+    
+	background: #d22caf75;
+}
+input:nth-child(even){
+    border: 0px;
+	background: #addcde85;
+}
+select{
+    background: burlywood;
+}

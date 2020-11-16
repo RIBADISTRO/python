@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ejemplo de HTML5" />
+  <meta name="keywords" content="HTML5, CSS3, JavaScript" />
+  <title>Index</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Programación web </h1>
+  <h1>Formulario Validacion</h1>
+
+  <div class="wrapper">
+    <div class="input-data">
+      <input type="text" required>
+      <div class="underline"></div>
+      <label>Ingresa su nombre</label>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="input-data">
+      <input type="email" title="Igresar e-mail" name="email" required />
+      <div class="underline"></div>
+      <label>Ingresa su correo</label>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="input-data">
+      <div class="underline"> </div>
+      <label>Contenido Informativos</label>
+    </div>
+    <form>
+      <input type="text" id="ejemplo" name="ejemplo" placeholder="Mostrar informacion" />
+      <input type="submit" value="Enviar" />
+    </form>
+
+
+  </div>
+
+  <div class="wrapper">
+    <div class="input-data">
+      <input type="number" title="0 - 9" id="NumeroNaturales" pattern="[0-9]{16}" maxlenth="9" required />
+      <div class="underline"></div>
+      <label>Ingresa numeros</label>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="input-data">
+      <input type="text" name="diasemana" id="diasemana" list="dias" placeholder="Lista de Días de la semana" />
+      <div class="underline"></div>
+      </div>
+    <datalist id="dias">
+      <option value="Lunes" />
+      <option value="Martes" />
+      <option value="Miércoles" />
+      <option value="Jueves" />
+      <option value="Viernes" />
+      <option value="Sábado" />
+      <option value="Domingo" />
+    </datalist>
+    
+  </div>
+  <script src="js/app_1.js"></script>
+</body>
+
+</html>

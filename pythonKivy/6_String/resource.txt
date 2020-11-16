@@ -1,0 +1,41 @@
+
+    STRING
+
+Es cualquier secuencia de caracteres, ya sean letras del
+alfabeto, caracteres numericos o caracteres especiales
+
+'Texto entre comillas - siples o dobles'
+"Texto entre comillas - simples o dobles"
+
+
+'''String con 3 comillas simples'''
+"""String con 3 comillas dobles"""
+
+======================================================================
+
+        REBANANDO STRING
+
+Es posible rebanar (slicing, del ingles una lista el fin de obtnener otra)
+
+========================================================================
+
+
+Imprimir los codigo ASCII
+
+>>> for c in range(122):
+...     chr(c)
+
+
+>>> for c in range(123):
+...     str(c) + "-" + chr(c)
+
+===========================================================================
+
+PROPIEDADES DE LAS STRING
+
+
+l.split(" ")
+lista = s.split(" ")
+lista[0]+" "+lista[2]
+s.replace("","")
+id(s)

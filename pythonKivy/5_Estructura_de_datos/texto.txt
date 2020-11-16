@@ -1,0 +1,337 @@
+ESTRUCTURA DE DATOS
+
+Es cualquier sececuencia de objeto/elementos en cualquier
+orden. Todas las estrcuturas  de datos tambien son listas
+
+-> LISTA
+-> PILA
+-> ARRAY / MATRIZ /VECTOR
+-> TUPLA
+-> SET(Grupo)
+-> DICCIONARIO
+-> ARBOL
+================================================
+
+LISTA
+
+__  __  __
+__  __  __
+__  __  __
+
+
+->Lista de email
+->Lita de telefono
+->Lista de paginas web
+->Lista de musicas
+->Lista de musicas
+->Lista de peliculas
+->Lista de impuestos
+->Lista de pagos
+
+1. Estructura mutable  cuyo
+   ordem natural  es  establecido
+   segun el orden  de esntrada
+
+2. Nuevo intems siempre  seran
+   adicionado despues  del
+   utilmo item de la lista
+
+3. El primer item adicionado
+   en la lista  siempre  sera el
+   primer elemento  de la
+   estructuras
+=================================================
+
+PILA
+
+1. Es un conjunto de
+   elemento adicionados
+   uno sobre el otro
+
+2. El ultimo elemento
+   ingresado sera el
+   primero en salir
+
+3. El primer elemento
+   ingresado siempre sera
+   el ultimo de la lista
+
+ 4  ==
+ 3  ==
+ 2  ==
+ 1  ==
+
+======================================================================
+
+ARRAY
+
+var[3]indice=0
+var[1]indice=1
+var[9]indice=2
+var[5]indice=3
+var[4]indice=4
+var[6]indice=5
+
+   1. Es un conjunto de elemento finitos y definidos en su
+      declaracion
+
+   2. El indice 0 es el primer elemento de la lista
+
+   3. El indice del ultimo elemento es el "total_de_imtem-1"
+
+
+========================================================================
+
+TUPLA
+
+1. Es una  lista declarada
+   como un constante
+
+2. NO es  posible  adicionar, eliminar, ni
+   adicional, eliminar, ni alterar elementos
+
+3. Toda tupla sera un
+   conjunto  de objetos
+   inmutables
+
+=====      ==
+=====      ==
+=====      ==
+=====      ==
+
+=========================================================================
+    SET
+
+    1. Estructura  de datos semejantes  a una lista
+    2. Tiene como objetos contener  una lista de  valores  diferentes
+    3. Es una lista sin items repetidos
+
+
+=========================================================================
+        DICCIONARIOS
+
+Estrcutura en la cual cada item  presenta una llave unica
+y esta puede ser  de cualquier tipo
+
+
+-------- --------      -------- ------
+|itemE | | 1000 |      |LLave | |valor|
+-------- --------      -------- ------
+                |      -------- ------
+                |      |ItemA | |568 |
+                |      -------- ------
+                |      -------- ------
+                |      |ItemB | |878 |
+                |      -------- ------
+                |      -------- ------
+                |      |ItemC | |15  |
+                |      -------- ------
+                |      -------- ------
+                |      |ItemD | |100 |
+                |      -------- ------
+                |      -------- ------
+                |----->|      | |    |
+                       -------- ------
+
+===================================================================================
+                    ARBOL
+
+
+Nivel 0                     /\
+-------------------------- / A\             1.Raiz - Elmento
+                           \  /               Perteneciente al nivel
+                            \/                uno. Todo Arbol tedra
+                            /\                siempre una    unica raiz
+                           /  \
+Nivel 1               /\  /    \  /\        2. Nodo/Hijo
+-------------------- / B\/      \/ C\          elemento que fue
+                     \  /        \  /          adicionado a otro  item
+                      \/          \/
+                      /\          /\
+                     /  \        /  \
+                    /    \      /    \
+Nivel 2            /\    /\    /\    /\     3. Nivel - propiedad
+----------------- / D\  / E\  / F\  / G\       qie indica cuantos
+                  \  /  \  /  \  /  \  /       nodos estan por encima
+                   \/    \/    \/    \/        de un hijo
+
+
+===================================================================================
+
+                REBANANDO LISTAS
+
+Es posible rebanar (slicing, En ingles) una lisra con el fin de obtener  otra
+
+    0  1  2  3  4  5
+    P  Y  T  H  O  N
+   -6 -5 -4 -3 -2 -1
+
+
+   lista[ x:y:z ]
+          | | |
+       start| |-->Step
+
+           stop
+
+===================================================================================
+
+INCLUIR, ALTERAR Y EXCLUIR  ELEMENTOS
+
+
+Ejemplo
+
+LISTA DE ABECEDARIOS
+
+l = ['aaa','bbb','ccc','ddd','eee','fff','gg']
+
+
+Para añadir un elemento en nuestra lista
+Se agrega hasta la ultima de la lista
+
+        l.append('hhh')
+
+        >>> l
+            ['aaa', 'ees12', 'ccc', 'ddd', 'eee', 'fff', 'gg', 'hhh']
+
+Para agregar un elemento en cualquier  parte de la lista l[]
+
+        l.insert(0,'1111')
+
+        >>> l
+            ['1111', 'aaa', 'ees12', 'ccc', 'ddd', 'eee', 'fff', 'gg', 'hhh']
+
+Para alterar algun elemento de la lista
+
+        l[1] = 'ees12'
+        >>>l
+           ['1111', 'ees12', 'ees12', 'ccc', 'ddd', 'eee', 'fff', 'gg', 'hhh']
+
+
+Para limpiar todos los elementos de la lista
+
+            l.clear()
+
+       >>> l
+           []
+
+        EXCLUIR
+        =======
+Retornara un item de la ultima de la lista y lo elimina
+
+    l = ['aaa','bbb','ccc','ddd','eee','fff','gg']
+    >>> l.pop()
+    'gg'
+     >>>l
+    ['aaa', 'bbb', 'ccc', 'ddd', 'eee', 'fff']
+
+
+O tambien podemos indicar que posicion excluir el elemento
+
+        >>> l.pop(0)
+        'aaa'
+        >>> l
+        ['bbb', 'ccc', 'ddd', 'eee', 'fff']
+
+Para eliminar varios elementos de la lista
+
+        >>> del(l[1:3])
+        >>> l
+        ['bbb', 'eee']
+    _____________________________
+        del(l[::2])
+        >>> l
+        ['eee']
+
+
+
+==================================================================================
+
+
+    ORDENAMIENTO DE LISTA
+
+
+
+lista = ['Julio','Idalia','Gris',' itandehuitl','Julieta']
+
+Para ordenar la lista, el ultimo elemento se posicione primero y el primero al
+ultimo
+
+        lista.reverse()
+        >>> lista
+        ['Julieta', ' itandehuitl', 'Gris', 'Idalia', 'Julio']
+
+Para Ordenar de forma ascendente
+
+        lista.sort()
+        >>> lista
+        [' itandehuitl', 'Gris', 'Idalia', 'Julieta', 'Julio']
+
+Para ordenar de forma descendente
+
+
+    lista.sort(reverse=True)
+    >>> lista
+    ['Julio', 'Julieta', 'Idalia', 'Gris', ' itandehuitl']
+
+===================================================================================
+
+
+CANTIDAD DE ELEMENTO
+
+Para ver cuantos elemento tiene un lista es de la siguiente manera
+
+    >>> len(lista)
+        5
+
+Retornara el utlimo de la lista
+
+        lista[len(lista)-1]
+        ' itandehuitl'
+
+Para saber cuantos elementos es estan repetido
+
+        lista.count('Julio')
+
+Para conocer en que posicion se encuenta un elemento de una lista
+
+
+           lista.index('Julio')
+
+===================================================================================
+
+
+            TUPLAS
+Una tupla es una lista inmutable. Una tupla no puede cambiar de ninguna manera
+una vez creada. [1] Una tupla se define de la misma manera que una lista, excepto
+que el conjunto de elementos se encierra entre paréntesis en lugar de corchetes. [2]
+
+
+1. Es una lista declarada como una constante
+2. no es posible adicionar, eliminar, ni alterar elementos
+3. Toda tupla sera un conjunto de objetos inmutables
+
+
+>>>t = tuple("abc")
+>>> t
+('a', 'b', 'c')
+
+
+===================================================================================
+
+OPERADORES IN Y NOT IN
+
+
+x in [...] #Lista
+x in (...) #Tupla
+x in {...} #diccionario
+
+
+>>> 2 in(1,2,3,4,5,6)
+True
+
+>>> 8 not in(1,2,3,4,5,6)
+True
+
+
+>>> 8 in range(1,7,2)
+False

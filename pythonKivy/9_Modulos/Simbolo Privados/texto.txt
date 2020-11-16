@@ -1,0 +1,3 @@
+Simbolo Privados
+
+son los nombres contenidos en el ambitos local

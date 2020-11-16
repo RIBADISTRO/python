@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+<<<<<<< HEAD
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/androidStdio" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/androidStdio/views-widgets-samples" vcs="Git" />
@@ -10,5 +11,8 @@
     <mapping directory="$PROJECT_DIR$/jrbweb" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/test" vcs="Git" />
+=======
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+>>>>>>> 32ece93cbe81da737f0df1ace61f77789867ebf1
   </component>
 </project>

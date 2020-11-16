@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (k36)" project-jdk-type="Python SDK" />
+>>>>>>> 32ece93cbe81da737f0df1ace61f77789867ebf1
 </project>
